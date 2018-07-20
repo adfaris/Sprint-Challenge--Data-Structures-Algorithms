@@ -9,6 +9,20 @@ def heapsort(arr):
     sorted[len(arr)-i-1] = heap.delete()
 
   return sorted
+
+  # def heapsort(arr):
+  # heap = Heap()
+  # for each in arr:
+  #   heap.insert(each)
+
+  # while heap.size > 0:
+  #   max_val = heap.storage[1]
+  #   heap.storage[1] = heap.storage[heap.size]
+  #   heap.storage[heap.size] = max_val
+  #   heap.size -= 1
+  #   heap._sift_down(1)
+
+  # return heap.storage[1:]
 # This javascript code should work but wasn't able to convert it to python. 
 # let heap = new Heap()
 # const sorted = new Array(arr.length)
