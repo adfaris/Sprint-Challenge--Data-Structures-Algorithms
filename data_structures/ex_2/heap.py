@@ -1,10 +1,13 @@
 def heapsort(arr):
   heap = Heap()
-  sorted = list(len(arr))
-  for i in range(len(arr)-1):
-    heap.insert(arr[i])
-  for i in range(len(arr)-1, 0, -1):
-    sorted = arr[i], arr[0] == arr[0], arr[i]
+  sorted = [0] * len(arr)
+
+  for i in arr:
+    heap.insert(i)
+
+  for i in range(len(arr)):
+    sorted[len(arr)-i-1] = heap.delete()
+
   return sorted
 # This javascript code should work but wasn't able to convert it to python. 
 # let heap = new Heap()
