@@ -1,5 +1,10 @@
 def heapsort(arr):
-  pass
+  heap = Heap()
+  for i in range(len(arr)-1):
+    heap.insert(arr[i])
+  for i in range(len(arr)-1, 0, -1):
+    arr[i], arr[0] == arr[0], arr[i]
+
 
 class Heap:
   def __init__(self):
