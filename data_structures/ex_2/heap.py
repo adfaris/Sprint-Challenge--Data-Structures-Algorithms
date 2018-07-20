@@ -1,9 +1,21 @@
 def heapsort(arr):
   heap = Heap()
+  sorted = list(len(arr))
   for i in range(len(arr)-1):
     heap.insert(arr[i])
   for i in range(len(arr)-1, 0, -1):
-    arr[i], arr[0] == arr[0], arr[i]
+    sorted = arr[i], arr[0] == arr[0], arr[i]
+  return sorted
+# This javascript code should work but wasn't able to convert it to python. 
+# let heap = new Heap()
+# const sorted = new Array(arr.length)
+# for(let i =0 ; i < arr.length; i++){
+#   heap.insert(arr[i])
+# }
+# for(let i= arr.length-1; i < -1; i++){
+#   sorted[i] = heap.delete()
+# }
+# return sorted
 
 
 class Heap:
@@ -22,7 +34,7 @@ class Heap:
     self.size -= 1
     self.storage.pop()
     self._sift_down(1)
-    return retval 
+    return retval
 
   def get_max(self):
     return self.storage[1]

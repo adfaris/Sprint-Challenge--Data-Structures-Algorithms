@@ -16,7 +16,13 @@ a. def findMaxValue(arr):
       max = arr[0]
   return max 
 
-b.
+b. Start from the bottom floor and find the first floor where the egg breaks and that floor is the optimal place to stop
+def eggdrop(n):
+  n = 0
+  if eggdrop and not broken:
+    increment + 1
+  else:
+    return n where eggdrop and broken.
 
 Exercise III:
 a. O(1) since it is the first element, it is retriving the first element.
